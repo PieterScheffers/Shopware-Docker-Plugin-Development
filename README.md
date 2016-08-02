@@ -1,6 +1,8 @@
 Shopware Plugin
 ===============
 
+This uses docker images from [dnhsoft](https://github.com/dnhsoft)
+
 # Docker with docker-machine
 	# start docker virtual machine
 	docker-machine start
