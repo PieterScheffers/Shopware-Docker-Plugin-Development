@@ -1,0 +1,25 @@
+shop:
+  # image: dnhsoft/shopware:5.2.3-php7
+  build: .
+  links:
+   - db
+  volumes:
+   - "./.backup/.log:/shopware/var/log"
+   - "./.backup/.files:/shopware/files"
+   - "./.backup/.media:/shopware/media"
+   - "./.backup/.community-plugins:/shopware/engine/Shopware/Plugins/Community"
+   - "./Local:/shopware/engine/Shopware/Plugins/Local"
+  ports:
+   - "8000:80"
+
+db:
+  image: dnhsoft/mysql-utf8:5.7
+  volumes:
+   - "./.backup/.database:/var/lib/mysql"
+
+pma:
+  image: dnhsoft/phpmyadmin:latest
+  links:
+   - db
+  ports:
+   - "8001:80"
