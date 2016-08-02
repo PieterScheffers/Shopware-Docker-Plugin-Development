@@ -10,6 +10,8 @@ Shopware Plugin
 	docker-machine env
 	docker-machine env default
 
+	# Share Windows folder or disk with virtualbox to use in volume mount
+
 # Start
 	# Start containers in docker-compose.yml (-d = daemon mode)
 	docker-compose up -d
