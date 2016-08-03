@@ -5,4 +5,4 @@ RUN wget -O /shopware/bin/sw http://shopwarelabs.github.io/sw-cli-tools/sw.phar 
 	chmod +x /shopware/bin/sw
 
 # Copy a php.ini with increased values for file uploading
-COPY ./config/php.ini /etc/php5/apache2/php.ini
+COPY ./files/config/php.ini /etc/php5/apache2/php.ini

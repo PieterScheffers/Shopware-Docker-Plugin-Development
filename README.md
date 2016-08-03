@@ -35,6 +35,10 @@ This uses docker images from [dnhsoft](https://github.com/dnhsoft)
 	docker exec shopwaredocker_shop_1 php bin/console sw:plugin:install SwagSloganOfTheDay
 	docker exec shopwaredocker_shop_1 php bin/console sw:plugin:activate SwagSloganOfTheDay
 
+# reinstall plugin
+	docker exec shopwaredocker_shop_1 php bin/console sw:plugin:refresh
+	docker exec shopwaredocker_shop_1 php bin/console sw:plugin:reinstall SwagSloganOfTheDay
+
 # Generate plugin boilerplate
 [SW - create plugin](https://github.com/shopwareLabs/sw-cli-tools#sw-plugincreate)
 
@@ -43,7 +47,8 @@ This uses docker images from [dnhsoft](https://github.com/dnhsoft)
 # Package plugin in zipfile
 [SW - package plugin](https://github.com/shopwareLabs/sw-cli-tools#sw-pluginzipdir)
 
-	docker exec shopwaredocker_shop_1 php bin/sw plugin:zip:dir /shopware/engine/Shopware/Plugins/Local/Frontend/SwagSloganOfTheDay
+	docker exec shopwaredocker_shop_1 php bin/sw plugin:zip:dir /shopware/engine/Shopware/Plugins/Local/Backend/SwagSloganOfTheDay
+	docker exec -ti shopwaredocker_shop_1 /bin/sh -c "cd /shopware/engine/Shopware/Plugins/Local/Backend ; php ../../../../../bin/sw plugin:zip:dir /shopware/engine/Shopware/Plugins/Local/Backend/SwagSloganOfTheDay"
 
 # Login
 - User: demo
