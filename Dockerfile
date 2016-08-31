@@ -1,5 +1,9 @@
 FROM dnhsoft/shopware:5.2.3-php7
 
+# TODO:
+# Download latest from github
+# https://github.com/shopware/shopware/releases/latest
+
 # get sw-cli tool
 RUN wget -O /shopware/bin/sw http://shopwarelabs.github.io/sw-cli-tools/sw.phar && \
 	chmod +x /shopware/bin/sw
