@@ -1,9 +1,9 @@
 <?php
 
-list($scriptname, $host, $port, $database, $user, $pass) = $argv;
-
 try
 {
+	list($scriptname, $host, $port, $database, $user, $pass) = $argv;
+	
 	$db = new PDO("mysql:host={$host};port={$port};dbname={$database};charset=utf8mb4", $user, $pass);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

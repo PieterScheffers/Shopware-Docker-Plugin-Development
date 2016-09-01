@@ -13,6 +13,7 @@ php bin/console sw:plugin:activate debug
 
 # printenv
 
+# change locale with php pdo mysql
 php /swtools/change-db.php "$SWDB_HOST" "$SWDB_PORT" "$SWDB_DATABASE" "$SWDB_USER" "$SWDB_PASS"
 
 # add demo data
