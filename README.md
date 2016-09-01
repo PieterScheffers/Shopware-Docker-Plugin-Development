@@ -24,9 +24,6 @@ This uses docker images from [dnhsoft](https://github.com/dnhsoft)
 	# Install demo data EN
 	docker exec shopwaredocker_shop_1 /swtools/install-demo-data-en.sh
 
-	# Init directories
-	docker exec shopwaredocker_shop_1 /swtools/prepare-dirs.sh
-
 # Stop
 	docker-compose down
 

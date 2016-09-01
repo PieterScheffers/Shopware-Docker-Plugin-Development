@@ -4,6 +4,8 @@ FROM dnhsoft/shopware:5.2.3-php7
 # Download latest from github
 # https://github.com/shopware/shopware/releases/latest
 
+ENV SWDEBUG 1
+
 # get sw-cli tool
 RUN wget -O /shopware/bin/sw http://shopwarelabs.github.io/sw-cli-tools/sw.phar && \
 	chmod +x /shopware/bin/sw
@@ -11,5 +13,14 @@ RUN wget -O /shopware/bin/sw http://shopwarelabs.github.io/sw-cli-tools/sw.phar 
 # Copy a php.ini with increased values for file uploading
 COPY ./files/config/php.ini /etc/php5/apache2/php.ini
 
-# downloads folder doesn't exist
-RUN mkdir -p /shopware/files/downloads
+# Copy a config.php with debug values
+COPY ./files/assets/config.php /shopware/config.php
+
+# Copy entrypoint
+COPY ./files/swtools/entrypoint.sh /swtools/entrypoint.sh
+RUN chmod +x /swtools/entrypoint.sh
+
+COPY ./files/swtools/change-db.php /swtools/change-db.php
+
+ENTRYPOINT ["/swtools/entrypoint.sh"]
+CMD ["apache2-foreground"]
