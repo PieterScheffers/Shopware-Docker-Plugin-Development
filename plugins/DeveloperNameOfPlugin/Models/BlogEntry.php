@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="swag_model_test_blog_entry")
+ * @ORM\Table(name="developer_name_of_plugin_blog_entry")
  */
 class BlogEntry
 {

@@ -6,6 +6,9 @@ use Shopware\Components\Plugin\Context\DeactivateContext;
 use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UpdateContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
+use Doctrine\ORM\Tools\SchemaTool;
+use Shopware\Components\Plugin;
+use DeveloperNameOfPlugin\Models\BlogEntry;
 
 class DeveloperNameOfPlugin extends \Shopware\Components\Plugin
 {

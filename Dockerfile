@@ -6,6 +6,9 @@ FROM dnhsoft/shopware:5.2.3-php7
 
 ENV SWDEBUG 1
 
+# Install composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 # get sw-cli tool
 RUN wget -O /shopware/bin/sw http://shopwarelabs.github.io/sw-cli-tools/sw.phar && \
 	chmod +x /shopware/bin/sw
