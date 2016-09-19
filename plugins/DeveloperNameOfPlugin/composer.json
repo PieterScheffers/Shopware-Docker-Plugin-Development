@@ -1,0 +1,13 @@
+{
+    "name": "developer/name-of-plugin",
+    "description": "Shopware 5.2 plugin",
+    "type": "shopware-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vin Diesel",
+            "email": "vindiesel@example.com"
+        }
+    ],
+    "require": {}
+}

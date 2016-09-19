@@ -1,0 +1,17 @@
+<!-- Resources/menu.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/menu.xsd">
+
+    <entries>
+        <entry>
+            <name>SloganOfTheDay</name>
+            <label lang="en">Slogan of the Days</label>
+            <label lang="de">Spruch des Tages</label>
+            <controller>SwagSloganOfTheDay</controller>
+            <action>index</action>
+            <class>sprite-metronome</class>
+            <parent identifiedBy="controller">Marketing</parent>
+        </entry>
+    </entries>
+</menu>
+<!-- For available parent controllers take a look into table s_core_menu (column controller). -->
