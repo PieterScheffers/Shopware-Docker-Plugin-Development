@@ -9,6 +9,7 @@ shop:
    - "./.backup/.media:/shopware/media"
    - "./.backup/.community-plugins:/shopware/engine/Shopware/Plugins/Community"
    - "./Local:/shopware/engine/Shopware/Plugins/Local"
+   - "./plugins:/shopware/custom/plugins"
   ports:
    - "8000:80"
 
