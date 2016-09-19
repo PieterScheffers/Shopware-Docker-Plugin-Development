@@ -5,7 +5,7 @@ use Enlight\Event\SubscriberInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use DeveloperNameOfPlugin\Services\SloganPrinter;
 
-class RouteSubscriber implements SubscriberInterface
+class EventSubscriber implements SubscriberInterface
 {
     private $sloganPrinter;
 

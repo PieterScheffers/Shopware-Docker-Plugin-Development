@@ -1,4 +1,4 @@
-FROM dnhsoft/shopware:5.2.3-php7
+FROM dnhsoft/shopware:5.2.6-php7
 
 # TODO:
 # Download latest from github

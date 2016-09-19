@@ -6,7 +6,7 @@
 
     <services>
         <!-- Event Subscriber -->
-        <service id="developer_name_of_plugin.subscriber.route" class="DeveloperNameOfPlugin\Subscriber\Route">
+        <service id="developer_name_of_plugin.subscriber.event" class="DeveloperNameOfPlugin\Subscriber\Event">
             <tag name="shopware.event_subscriber" />
         </service>
         

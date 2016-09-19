@@ -6,8 +6,8 @@
     <label lang="en">DeveloperNameOfPlugin</label>
 
     <version>1.0.1</version>
-    <link>https://github.com/bcremer/SwagModelTest</link>
-    <author>Benjamin Cremer</author>
+    <link>https://githubber.com/vindiesel/DeveloperNameOfPlugin</link>
+    <author>Vin Diesel</author>
     <compatibility minVersion="5.2.0" />
 
     <changelog version="1.0.0">
