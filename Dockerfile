@@ -5,6 +5,7 @@ FROM dnhsoft/shopware:5.2.6-php7
 # https://github.com/shopware/shopware/releases/latest
 
 ENV SWDEBUG 1
+ENV SW_CRON 1
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

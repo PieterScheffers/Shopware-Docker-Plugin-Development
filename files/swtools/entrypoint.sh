@@ -6,10 +6,15 @@
 # downloads folder doesn't exist
 mkdir -p /shopware/files/downloads
 
-# Activate debug
+# Activate debug plugin
 php bin/console sw:plugin:refresh 
-php bin/console sw:plugin:install debug 
+php bin/console sw:plugin:install debug
 php bin/console sw:plugin:activate debug
+
+# Activate cron plugin
+php bin/console sw:plugin:refresh 
+php bin/console sw:plugin:install cron
+php bin/console sw:plugin:activate cron
 
 # printenv
 
