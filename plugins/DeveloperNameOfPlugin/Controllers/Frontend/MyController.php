@@ -4,7 +4,8 @@ class Shopware_Controllers_Frontend_MyController extends Enlight_Controller_Acti
 {
 	public function indexAction()
 	{
-
+		echo "bla bla";
+		exit();
 	}
 
 	public function phpinfoAction()

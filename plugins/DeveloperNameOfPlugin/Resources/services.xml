@@ -6,7 +6,14 @@
 
     <services>
         <!-- Event Subscriber -->
-        <service id="developer_name_of_plugin.subscriber.event" class="DeveloperNameOfPlugin\Subscriber\Event">
+        <service id="developer_name_of_plugin.subscriber.event" class="DeveloperNameOfPlugin\Subscriber\EventSubscriber">
+            <argument type="service" id="developer_name_of_plugin.slogan_printer" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+
+        <!-- Register controller subscriber -->
+        <service id="developer_name_of_plugin.subscriber.controller_my_controller" class="DeveloperNameOfPlugin\Subscriber\MyControllerSubscriber">
+            <argument type="service" id="service_container" />
             <tag name="shopware.event_subscriber" />
         </service>
         

@@ -1,6 +1,6 @@
 <?php
 
-namespace SwagSloganOfTheDay\Services;
+namespace DeveloperNameOfPlugin\Services;
 
 class SloganPrinter
 {

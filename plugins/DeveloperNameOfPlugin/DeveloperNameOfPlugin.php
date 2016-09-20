@@ -18,7 +18,7 @@ class DeveloperNameOfPlugin extends \Shopware\Components\Plugin
         return [
             'Enlight_Controller_Front_StartDispatch' => 'onStartDispatch',
 
-            'Enlight_Controller_Dispatcher_ControllerPath_Frontend_MyController' => 'registerController',
+            // 'Enlight_Controller_Dispatcher_ControllerPath_Frontend_MyController' => 'registerController',
         ];
     }
     
